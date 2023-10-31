@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe tu nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/black"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bntHello"
+        app:layout_goneMarginBottom="15dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="20sp"
+        android:hint="Escribe tu nombre"
+        android:singleLine="true"
+        android:maxLines="1"
+
+
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bntHello"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pulsa aquí"
+        android:textAllCaps="false"
+        android:background="@color/purple_200"
+
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
